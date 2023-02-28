@@ -11,17 +11,23 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-	html {
-		background-color: hsl(212, 45%, 89%)
+	body {
+		background-color: hsl(212, 45%, 89%);
 	}
 	
 	.info_card {
-		margin: auto;
 		border-radius: 20px;
 		background-color: hsl(0, 0%, 100%);
 		padding: 16px;
 		width: 288px;
 		height: 465px:
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		
 	}
 	
 	.info_card_img {
@@ -50,13 +56,19 @@
 		font-weight: 400;
 	}
 	
-	.attribution { font-size: 11px; text-align: center; }
+	.attribution {
+	position: fixed;
+	font-size: 11px; text-align: center;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	}
+	
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  
   
   <div class="info_card">
 	  <div class="info_card_img"></div>
