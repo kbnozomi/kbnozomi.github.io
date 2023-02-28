@@ -11,8 +11,14 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+  
+	/* added flexbox instead of positition: absolute to center card*/
 	body {
 		background-color: hsl(212, 45%, 89%);
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	
 	.info_card {
@@ -21,13 +27,6 @@
 		padding: 16px;
 		width: 288px;
 		height: 465px:
-		margin: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		
 	}
 	
 	.info_card_img {
@@ -37,18 +36,24 @@
 		padding-top: 100%;
 	}
 	
-	p {
+	p,h1 {
 		text-align: center;
 		font-family: 'Outfit', sans-serif;
-		font-size: 15px;
-		padding-left: 15px;
-		padding-right: 15px;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		margin-top: 1.5rem;
+		font-size: 1.25rem;
+	}
+	
+	p {
+		margin-bottom: 2rem;
+		font-size: 0.9375rem;
 	}
 	
 	.card_title {
 		color: hsl(218, 44%, 22%);
 		font-weight: 700;
-		font-size: 22px;
+		
 	}
 	
 	.card_desc {
@@ -70,18 +75,19 @@
 </head>
 <body>
   
-  <div class="info_card">
+  <!--Added main tag for added web-accessibility-->
+  <main class="info_card">
 	  <div class="info_card_img"></div>
 	  
-	  <p class="card_title">Improve your front-end skills by building projects</p>
+	  <h1 class="card_title">Improve your front-end skills by building projects</h1>
 
 	  <p class="card_desc">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </main>
   
-  </div>
-  
-  <div class="attribution">
+  <!--Added footer tag for added web-accessibility-->
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Kevin Barrett</a>.
-  </div>
+  </footer>
 </body>
 </html>

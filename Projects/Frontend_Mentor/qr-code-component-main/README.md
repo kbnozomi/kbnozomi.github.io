@@ -18,12 +18,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./screenshots/Desktop View.png)
+![](.screenshots/Desktop View.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [View Live Site](kbnozomi.github.io/Projects/Frontend_Mentor/qr-code-component-main/index.html)
 
 ## My process
 
@@ -37,7 +37,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 I used this bit of css to center the card vertically and horizontally on the webpage.
 
 ```css
-	...
+	.info_card {
 		margin: 0;
 		position: absolute;
 		top: 50%;
@@ -53,7 +53,7 @@ I'd like to work on making my websites more accessable on multiple devices and b
 
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com) - This helped me with getting the basics of html and css.
+- [W3Schools](https://www.w3schools.com) - This helped me with getting the basics of html and css.
 
 ## Author
 
